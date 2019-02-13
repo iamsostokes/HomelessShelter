@@ -30,6 +30,15 @@ public class Shelter {
         }
     }
 
+    public void viewCurrentResident() {
+        for (Resident resident: residents) {
+            if (resident.getResidentStatus().equalsIgnoreCase("current")){
+                System.out.println("     ");
+                resident.printDetails();
+            }
+        }
+    }
+
     public void changeApplicantStatus(int profileNumber) {
         for (int i = 0; i < residents.size(); i++) {
             if (profileNumber == residents.get(i).getProfileNumber()){

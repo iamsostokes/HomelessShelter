@@ -14,7 +14,7 @@ public class Admin {
 
         System.out.println(
                 "1. View pending applications or approve pending applications.\n" +
-                        "2. View all residents.\n" +
+                        "2. View all current residents.\n" +
                         "3. View all employees.\n" +
                         "4. View all volunteers.\n" +
                         "5. View the current budget.\n" +
@@ -44,6 +44,8 @@ public class Admin {
 
                     break;
                 case 2:
+                    System.out.println("Here is a list of all the current residents.");
+                    shelter.viewCurrentResident();
 
                     break;
                 case 3:

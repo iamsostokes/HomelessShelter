@@ -1,11 +1,12 @@
-public class FutureResident {
+public class Resident {
 
     private String firstName;
     private String lastName;
     private int age;
     private String anyAdditionalInformation;
+    private int profileNumber;
 
-    public FutureResident(String firstName, String lastName, int age, String anyAdditionalInformation) {
+    public Resident(String firstName, String lastName, int age, String anyAdditionalInformation, int profileNumber) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;

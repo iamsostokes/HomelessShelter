@@ -6,10 +6,10 @@ public class HomelessShelterDemo {
         Scanner scan = new Scanner(System.in);
         int userInput;
         String adminPassword = "1234";
-        Boolean running = false;
+        boolean running = false;
         int profileNumber = 100;
 
-
+        do {
         System.out.println("Welcome to the Homeless Shelter");
         System.out.println("Are you a future resident or a donor? Enter 1 for Resident or 2 for Donor");
         userInput = scan.nextInt();
@@ -17,7 +17,6 @@ public class HomelessShelterDemo {
 
 
 
-        do {
 
             switch (userInput) {
                 case 1:
@@ -42,8 +41,13 @@ public class HomelessShelterDemo {
                     shelter.addResident(newResident);
                     shelter.showAllResidents();
 
+
+
                     break;
-                case 2:
+                case 1234:
+                    Admin admin = new Admin();
+                    admin.adminMenu(shelter);
+
                     break;
                 default:
                     System.out.println("Sorry not a valid option.");
@@ -51,6 +55,7 @@ public class HomelessShelterDemo {
             }
 
         } while (!running);
+
     }
 
 }

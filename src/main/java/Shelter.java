@@ -29,4 +29,13 @@ public class Shelter {
             }
         }
     }
+
+    public void changeApplicantStatus(int profileNumber) {
+        for (int i = 0; i < residents.size(); i++) {
+            if (profileNumber == residents.get(i).getProfileNumber()){
+                residents.get(i).setResidentStatus("current");
+            }
+        }
+    }
+
 }

@@ -15,6 +15,8 @@ public class HomelessShelterDemo {
         userInput = scan.nextInt();
         scan.nextLine();
 
+
+
         do {
 
             switch (userInput) {

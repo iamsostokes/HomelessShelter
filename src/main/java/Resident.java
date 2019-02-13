@@ -11,12 +11,22 @@ public class Resident {
         this.lastName = lastName;
         this.age = age;
         this.anyAdditionalInformation = anyAdditionalInformation;
+        this.profileNumber = profileNumber;
     }
 
     public void printDetails(){
+        System.out.println("Resident Profile Number is " + profileNumber);
         System.out.println("The Future Resident name is " + firstName+ " " + lastName +
                " and they are " + age + " years old.");
         System.out.println("Here is some additional information about them: " + anyAdditionalInformation );
+    }
+
+    public int getProfileNumber() {
+        return profileNumber;
+    }
+
+    public void setProfileNumber(int profileNumber) {
+        this.profileNumber = profileNumber;
     }
 
     public String getFirstName() {

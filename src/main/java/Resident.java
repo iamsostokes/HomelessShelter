@@ -14,9 +14,9 @@ public class Resident {
     }
 
     public void printDetails(){
-        System.out.println("The Future Resident name is" + firstName + lastName +
+        System.out.println("The Future Resident name is " + firstName+ " " + lastName +
                " and they are " + age + " years old.");
-        System.out.println("Here is some additional information about them." + anyAdditionalInformation );
+        System.out.println("Here is some additional information about them: " + anyAdditionalInformation );
     }
 
     public String getFirstName() {
